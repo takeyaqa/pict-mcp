@@ -1,0 +1,37 @@
+{
+  "name": "pict-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pairwise Independent Combinatorial Testings for MCP",
+  "bin": {
+    "pict-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 dist/index.js && cp src/pict.mjs dist/pict.mjs && cp src/pict.wasm dist/pict.wasm",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Takeshi Kishi",
+  "license": "MIT",
+  "repository": "takeyaqa/pict-mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
+  }
+}
