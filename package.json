@@ -7,7 +7,7 @@
     "pict-mcp": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc && chmod 755 dist/index.js && cp src/pict.mjs dist/pict.mjs && cp src/pict.wasm dist/pict.wasm",
+    "build": "tsc && chmod 755 dist/index.js",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -23,6 +23,7 @@
   "repository": "takeyaqa/pict-mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.9.0",
+    "@takeyaqa/pict-node": "3.7.4-fork.5",
     "zod": "^3.24.2"
   },
   "devDependencies": {
